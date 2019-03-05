@@ -4,7 +4,8 @@ phases:
     install:
         commands:
             - echo install package php
-            - apt-get install php71-zip php71-gd
+            - apt-get install -y php7.0 php7.0-fpm php7.0-cli php7.0-common php7.0-mbstring php7.0-gd php7.0-intl php7.0-xml php7.0-mysql php7.0-mcrypt php7.0-zip
+
     pre_build:
         commands:
             - echo build package php
