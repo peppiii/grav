@@ -3,9 +3,11 @@ version: 0.2
 phases: 
     install:
         commands:
-            - echo install package php
+            - echo install package phpgit 
+            - apt-get install -y python-software-properties
+            - add-apt-repository -y ppa:ondrej/php
+            - apt-get update -y
             - apt-get install -y php7.0 php7.0-fpm php7.0-cli php7.0-common php7.0-mbstring php7.0-gd php7.0-intl php7.0-xml php7.0-mysql php7.0-mcrypt php7.0-zip
-
     pre_build:
         commands:
             - echo build package php
