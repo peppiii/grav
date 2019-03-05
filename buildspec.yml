@@ -4,7 +4,7 @@ phases:
     install:
         commands:
             - echo install package php
-            - apt-get install php-zip php-gd
+            - apt-get install php7.1-zip php7.1-gd
     pre_build:
         commands:
             - echo build package php
