@@ -1,0 +1,13 @@
+version: 0.2 
+
+phases: 
+    install:
+        commands:
+            - echo nothing to do here
+    build:
+        commands:
+            - echo build started on `date`
+            - composer test
+artifacts:
+    files: 
+        - grey/data.zip
